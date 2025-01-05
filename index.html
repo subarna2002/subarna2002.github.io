@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./src/output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta name="keyword" content="Portfolio, Web Developer,Graphic Designer,Creative Portfolio,UX/UI Designer,Freelance Projects,Digital Portfolio, Frontend Developer">
+    <meta name="description" content="Explore the professional portfolio of Subarna Rai, showcasing expertise in [your field, e.g., web development, graphic design, UX/UI design]. Discover creative projects, innovative designs, and professional services. Let's collaborate to bring your vision to life
+    ">
+    <meta property="og:title" content="Subarna Rai Portfolio">
+    <meta property="og:description" content="Explore the professional portfolio of Subarna Rai, showcasing expertise in [your field, e.g., web development, graphic design, UX/UI design]. Discover creative projects, innovative designs, and professional services. Let's collaborate to bring your vision to life
+    ">
+    <meta property="og:image" content="images/photo.jpg">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .container {
+            width: 86%;
+            margin: auto;
+        }
+
+        form input,
+        textarea {
+            box-shadow: 0 0 10px #333;
+            border-radius: 6px;
+            padding: 4px 8px;
+            width: 100%;
+        }
+
+        .shadow-in {
+            background-color: 0 0 20px #f97316;
+        }
+    </style>
+</head>
+
+<body class="font-sans">
+    <header class="bg-orange-950 text-white py-4 sticky top-0">
+        <nav class="container flex justify-between items-center shadow-orange-500">
+            <div>
+                <h1 class="text-2xl font-bold"><span class="text-orange-600">Subarna</span> Rai</h1>
+            </div>
+            <ul class="hidden md:flex gap-12">
+                <li class="text-orange-600 underline font-semibold">
+                    <a href="#hero">Portfolio</a>
+                </li>
+                <li>
+                    <a href="#about">About</a>
+                </li>
+                <li>
+                    <a href="#contact">Contact</a>
+                </li>
+            </ul>
+<!-- drawer init and toggle-->
+
+<div class="flex item">
+    
+                <div class="md:hidden">
+                    <button class="text-white " type="button" data-drawer-target="drawer-example"
+                        data-drawer-show="drawer-example" aria-controls="drawer-example">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                </div>
+
+           <div> 
+           <a href="" class="bg-white text-orange-950 py-2 px-4 rounded-lg font-medium">Contract me</a>
+            </div>
+    
+    </header>
+
+    <!-- drawer component -->
+    <div id="drawer-example"
+        class="fixed top-0 left-0 z-40 h-screen p-4 overflow-y-auto transition-transform -translate-x-full bg-white w-80 dark:bg-gray-800"
+        tabindex="-1" aria-labelledby="drawer-label">
+        <h5 class="text-2xl mb-4 ">Menu</h5>
+        <button type="button" data-drawer-hide="drawer-example" aria-controls="drawer-example"
+            class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 absolute top-2.5 end-2.5 flex items-center justify-center dark:hover:bg-gray-600 dark:hover:text-white">
+            <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+            </svg>
+            <span class="sr-only">Close menu</span>
+        </button>
+        <ul class="hidden md:flex gap-12">
+            <li class="text-orange-600 underline font-semibold">
+                <a href="#hero">Portfolio</a>
+            </li>
+            <li>
+                <a href="#about">About</a>
+            </li>
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+        </ul>
+    </div>
+
+    <main>
+        <!--hero section-->
+        <section id="hero" class="py-10">
+            <div class="container grid grid-cols-2 items-center">
+                <div class="space-y-5">
+                    <h1 class="text-3xl font-bold ">
+                        Hi <br>
+                        I'm <span class="text-orange-600">Subarna</span> Rai <br>
+                        a Full Stack Developer
+                    </h1>
+                    <p>
+                        I am <strong>Subarna Rai</strong>, a passionate <strong>Full-Stack Developer </strong>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi eos soluta molestias? Quidem eum
+                        autem excepturi, debitis magni nesciunt perferendis ad, aspernatur voluptatum deleniti quia
+                        necessitatibus, quo culpa mollitia pariatur.
+
+                    </p>
+
+                    <div>
+                        <a href="Hire Me" class="bg-black text-white py-2 px-4 rounded-lg hover:shadow-lg">Hire Me</a>
+                        <a href="Experience" class="bg-orange-600 text-white py-2 px-4 rounded-lg hover:shadow-lg">Experience</a>
+                    </div>
+                </div>
+                <div class="m-auto">
+                    <img class="h-[400px] rounded-[60%]" src="./images/photo.jpg" alt="subarna image">
+                </div>
+            </div>
+        </section>
+        <!--hero section-->
+
+
+        <!--about section-->
+        <section id="about" class="py-10 bg-orange-950 text-white">
+            <div class="container grid grid-cols-2 items-center">
+                <div class="m-auto shadow-in">
+                    <img class=" h-[400px] rounded-[50%]" src="images/photo.jpg" alt="subarna photo">
+                </div>
+                <div class="space-y-5">
+                    <h1 class="text-3xl font-bold ">
+                        Hi <br>
+                        I'm <span class="text-orange-600">Subarna</span> Rai <br>
+                        a Full Stack Developer
+                    </h1>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi eos soluta molestias? Quidem eum
+                        autem excepturi, debitis magni nesciunt perferendis ad, aspernatur voluptatum deleniti quia
+                        necessitatibus, quo culpa mollitia pariatur.
+
+                    </p>
+
+                    <div>
+                        <a href="about" class="bg-orange-600 text-white py-2 px-4 rounded-lg hover:shadow-lg">Experience</a>
+                    </div>
+                </div>
+        </section>
+        <!--about section-->
+
+        <!--Contact section-->
+        <section id="contact" class="py-10">
+            <div class="w-[40%] m-auto">
+                <h1 class="font-bold text-3xl p-[20px] text-center">Contact <span class="text-orange-500">Me</span></h1>
+                <form class="space-y-4">
+                    <div>
+                        <input type="text" class="name" id="name" placeholder="Full Name" required>
+                    </div>
+                    <div>
+                        <input type="email" class="email" id="email" placeholder="Email Address" required>
+                    </div>
+                    <div>
+                        <input type="tell" class="number" id="number" placeholder=" Phone Number" required>
+                    </div>
+                    <div>
+                        <input type="text" class="subject" id="subject" placeholder="Subject" required>
+                    </div>
+                    <div>
+                        <textarea name="message" id="message" placeholder="Message"></textarea>
+                    </div>
+                </form>
+                <div class="p-[20px] text-center">
+                    <a href="contract" class=" bg-black text-white py-2 px-4 rounded-lg hover:shadow-lg">Send Message</a>
+                </div>
+
+            </div>
+        </section>
+        <!--Contact section-->
+
+    </main>
+    <footer class=" bg-orange-950 text-white py-10 space-y-4">
+        <ul class=" flex justify-center gap-8">
+            <li>
+                <a href="https://www.facebook.com/subeysir11" target="_blank">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://discord.com/channels/1248693656504897778/1248693656504897780" target="_blank">
+                    <i class="fa-brands fa-discord"></i>
+                </a>
+            </li>
+            <li>
+                <a href="" target="_blank">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+            </li>
+
+            <li>
+                <a href="" target="_blank">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+            </li>
+        </ul>
+        <ul class="flex gap-12 justify-center">
+            <li>
+                <a href="">Portfolio</a>
+            </li>
+            <li>
+                <a href="">About</a>
+            </li>
+            <li>
+                <a href="">Contract</a>
+            </li>
+        </ul>
+        <ul class="flex gap-12 justify-center ">
+            <li>
+                <a href=""> <strong>Develop by Subarna Rai</strong> </a>
+            </li>
+        </ul>
+    </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
+<script src="/js/index.js"></script>
+
+</body>
+
+</html>
+
+<!--npx tailwindcss -i ./src/input.css -o ./src/output.css --watch-->
